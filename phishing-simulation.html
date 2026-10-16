@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sicherheitsüberprüfung</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #202124;
+}
+
+.header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 520px;
+    margin: 70px auto;
+    background: white;
+    padding: 38px;
+    border-radius: 10px;
+    box-shadow: 0 3px 18px rgba(0,0,0,.12);
+}
+
+.warning {
+    font-size: 50px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.notice {
+    background: #fff3cd;
+    padding: 14px;
+    border-radius: 6px;
+    margin: 25px 0;
+}
+
+button {
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    border-radius: 6px;
+    background: #1769e0;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+.small {
+    margin-top: 22px;
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+}
+
+#phishing {
+    display: none;
+    max-width: 620px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 18px rgba(0,0,0,.12);
+}
+
+#phishing h1 {
+    font-size: 34px;
+}
+
+.red {
+    color: #c62828;
+}
+
+li {
+    margin: 12px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div id="firstPage">
+
+<div class="header">
+🔐 Kundenportal
+</div>
+
+<div class="container">
+
+<div class="warning">⚠️</div>
+
+<h1>Ihr Konto wurde vorübergehend eingeschränkt</h1>
+
+<p>
+Wir haben ungewöhnliche Aktivitäten auf Ihrem Konto festgestellt.
+Aus Sicherheitsgründen wurde der Zugriff vorübergehend eingeschränkt.
+</p>
+
+<div class="notice">
+<strong>Aktion erforderlich</strong><br><br>
+Bitte bestätigen Sie Ihren Kontostatus, um eine dauerhafte Sperrung zu vermeiden.
+</div>
+
+<button onclick="showPhishing()">
+Konto jetzt überprüfen
+</button>
+
+<div class="small">
+Sicherheitscenter • Datenschutz • Kundenservice
+</div>
+
+</div>
+</div>
+
+
+<div id="phishing">
+
+<h1 class="red">⚠️ PHISHING!</h1>
+
+<h2>Sie sind auf einen Phishing-Link hereingefallen.</h2>
+
+<p>
+Keine Sorge – dies war nur eine Schulungssimulation.
+Es wurden keine persönlichen Daten erfasst.
+</p>
+
+<h3>Welche Warnzeichen gab es?</h3>
+
+<ul>
+<li>⚠️ Das Konto soll angeblich dringend gesperrt werden.</li>
+<li>⚠️ Der Text erzeugt Zeitdruck und Angst.</li>
+<li>⚠️ Man soll über einen Link das Konto bestätigen.</li>
+<li>⚠️ Der Absender sollte genau überprüft werden.</li>
+<li>⚠️ Die tatsächliche Internetadresse sollte vor dem Anklicken geprüft werden.</li>
+</ul>
+
+<h3>Was wäre richtig gewesen?</h3>
+
+<p>
+Nicht auf den Link klicken. Die offizielle Webseite selbst öffnen
+oder den Anbieter über einen bekannten Kontaktweg erreichen.
+</p>
+
+</div>
+
+
+<script>
+function showPhishing() {
+    document.getElementById("firstPage").style.display = "none";
+    document.getElementById("phishing").style.display = "block";
+}
+</script>
+
+</body>
+</html>S
